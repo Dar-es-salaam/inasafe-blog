@@ -13,15 +13,16 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Dar es salaam with Inasafe</title>
+    <title>Dar es salaam | Inasafe</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>Dar es salaam with Inasafe</h1>
+         <h2 style="margin-bottom:0px;font-size:35px; color:white; font-family:'Slabo 27px';">DAR ES SALAAM</h2>
+         <h2 style="margin-top:0px;font-size:35px; color:white;font-family:'Slabo 27px';">InaSAFE</h2>
         <h2></h2>
-        <a href="https://github.com/Samweli/inasafe" class="button"><small>View project on</small> GitHub</a>
+        <a href="https://github.com/Samweli/inasafe" class="button" target="_blank"><small>View project on</small> GitHub</a>
       </div>
     </header>
 
@@ -29,32 +30,97 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h3>
-            <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" 
-            aria-hidden="true">
-              <span class="octicon octicon-link"></span></a>
-            Welcome to GitHub Pages.
+            InaSAFE
           </h3>
 
-<p>
-  InaSAFE is free software that produces realistic natural hazard impact scenarios for better
-  planning, preparedness and response activities. It provides a simple but rigorous way to combine
-  data from scientists, local governments and communities to provide insights into the likely impacts 
-  of future disaster events.
-More Details can be found  
-  <a href="http://inasafe.org/en/"> here </a>
- 
-</p>
+            <p>
+              InaSAFE is free software that produces realistic natural hazard impact scenarios for better
+              planning, preparedness and response activities. It provides a simple but rigorous way to combine
+              data from scientists, local governments and communities to provide insights into the likely impacts 
+              of future disaster events.
+            More Details can be found  
+              <a href="http://inasafe.org/en/"> here </a>
+             
+            </p>
+            <h3>
+            About Dar es Salaam
+          </h3>
+
+            <p>
+             Dar es-Salaam has been experiencing major flood disasters following the 
+             continuing heavy rains. The floods have affected the lives of citizens, injured many, 
+             destroyed houses, affected several infrastructures like bridges, loss of property and
+              weakened various social and economic activities.
+             
+            </p>
+            <h3>
+            Better Planning to Save Lives
+          </h3>
+
+            <p>
+             This InaSAFE version supports the user to input area to be examined with its population
+             data and  input hazard layer(floods layer) then the analysis can be done over the area.
+             For example user enters Tandale area and create and fill the population column on the layer
+             , the results will be respectively with the data provided from the user.
+             This help much, as the its flexible and can be easily updated as compared to fetching data
+             from other organization such as Worlp Population which can sometimes be not updated.
+             
+            </p>
+             <h3>
+            Technical Part
+          </h3>
+
+            <p>
+            InaSAFE uses Impact Functions as the main part for execution of the analysis calculations.
+            The Impact Function is the one responsible for the main calculations of how the impact caused 
+            by a certain hazard(flood,tsunami,volcano...) affects a certain exposure(building,road,land cover,population...).
+            Currently each hazard and exposure pair(eg. Flood and Roads,Floods and Buildings) has its own Impact Function.
+            </p>
+            <p> In our case we have wards with population. 
+            So we have added a new Impact Function that will calculate the number of people that will be affected in the event of Flood,
+             the current assumption is that the population is uniformly distributed. 
+
+           
+            <ol>
+             The whole process of adding new Impact Function includes
+             <li>Adding new module(contains the code with main calculations)</li>
+             <li>Adding parameters and metadata that the Impact Function will deal with.</li>
+             <li>Adding testing data and Unit Testing</li>
+            </ol>
+             
+            </p>
+
 
         </section>
 
         <aside id="sidebar">
-          <a href="https://github.com/Dar-es-salaam/inasafe-blog/zipball/master" class="button">
+          <a href="./plugin/inasafe.3.1.3.zip" class="button">
             <small>Download the Plugin</small>
             .zip file
           </a>
+          <a href="http://inasafe.org/en/" style="font-size:20px;">
+          Installation instructions
+          </a>
          </aside>
       </div>
+
     </div>
+    <div class="inner clearfix">
+     <div class="ill-images">
+         <h3>
+           Example Analysis results
+          </h3>
+           <section class="main-content-ans">
+           <h4>Question</h4>
+           <img src="./images/illustrations/question.jpg" >
+           </section>
+              <aside id="sidebar2">
+           <h4>Report</h4>
+           <img src="./images/illustrations/report.jpg" >
+           </aside>
+
+      </div>
+      </div>
 
   
   </body>
