@@ -540,7 +540,7 @@ a.button {
   height: 58px;
   padding-top: 22px;
   padding-left: 68px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Slabo 27px','Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 23px;
   line-height: 1.2;
   color: #fff;
@@ -911,3 +911,11 @@ footer a:hover {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
 
+/* for wb and todi logos */
+
+.wb{
+   background: transparent url(../images/logos/wblogo.png) 0 0 no-repeat;
+}
+.todi{
+   background: transparent url(../images/logos/TODI_Logo.png) 0 0 no-repeat;
+}
